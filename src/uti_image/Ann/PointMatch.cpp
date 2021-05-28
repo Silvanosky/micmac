@@ -1,5 +1,7 @@
 #include "StdAfx.h"
 
+#include "PointMatch.h"
+
 using namespace std;
 
 //----
@@ -39,7 +41,7 @@ void readPointMatch_v0( istream &aInput, vector<PointMatch> &oVector )
 		readList.push_back( PointMatch( Pt2dr(x0,y0), Pt2dr(x1,y1) ) );
 		nbMatches++;
 	}
-	readList.pop_back();
+	//readList.pop_back(); //Useless
 	nbMatches--;
 
 	oVector.resize(nbMatches);

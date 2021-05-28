@@ -385,8 +385,8 @@ Header-MicMac-eLiSe-25/06/2007*/
 		ElFclose(aFP);
 		}
 			
-		if ( glist!=NULL ) delete glist;
-		if ( plist!=NULL ) delete plist;
+		if ( glist!=NULL ) free(glist);
+		if ( plist!=NULL ) free(plist);
 			
 			
 		return EXIT_SUCCESS;
